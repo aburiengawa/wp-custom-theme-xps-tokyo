@@ -1,0 +1,568 @@
+/*
+	Theme Name: XPS Tokyo
+	Author: JM Taylor
+	Author URI: http://jmtaylor.tk
+	Description: Advanced Wordpress Theme
+	Version: 1.0
+*/
+
+/*GLOBAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 16px;
+  color: #fff;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: solid 1px #fff;
+  display: inline;
+  padding-bottom: 1px;
+}
+
+a {
+  color: #0D446C;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a:hover { color: #297CB9; }
+
+ul {
+  list-style-image: url(img/checkmark.png);
+  list-style-position: outside;
+  margin-left: 30px;
+}
+
+h3 { color: #0D446C; }
+
+h3 a {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+section { padding: 80px 0; }
+
+hr { border-color: #0D446C; }
+
+/*REUSABLE*/
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-small {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.clr { clear: both; }
+
+.title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 300;
+  margin-left: 10px; 
+  margin-right:10px;
+}
+
+.shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+
+/*PAGE CONTENT*/
+.content-link {
+  color: #0D446C;
+  font-weight: 700;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  background: #0D446C;
+  height: 120px;
+}
+
+#logo-tagline {
+  padding: 50px 15px;
+  display: inline-block;
+}
+
+.logo {
+  margin-top: 5px;
+  height: 110px;
+  float: left;
+}
+
+.custom-logo{
+  margin-top: 0;
+  height: 110px;
+  width: 110px;
+}
+
+.contact-header {
+  margin-top: 20px;
+  float: right;
+  width: 30%;
+}
+
+.header-contact-details { display: inline-block; }
+
+.header-contact-details:last-child { margin-left: 10px; }
+
+.header-contact-details i { color: #868610; }
+
+.header-contact-details a {
+  color: #fff;
+  font-style: normal;
+}
+
+.header-contact-details a:hover {
+  color: #868610;
+}
+
+.estimate {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    overflow: hidden;
+    text-align: right;
+}
+
+/*MENUS*/
+nav {
+  width: 100%;
+  background: #0F4C79;
+  padding: 10px;
+  padding-top: 8px;
+  box-shadow: 0 10px 10px -8px #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-nav { text-align: right; }
+
+.main-nav ul { float: right; }
+
+.main-nav ul li { display: inline; }
+
+.main-nav ul li:last-child { padding-right: 0; }
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+ul.nav-ul li a {
+    padding: 11px 10px 13px 10px;
+    border-bottom: none;
+}
+
+ul.nav-ul li.current-menu-item a { background-color: #868610; }
+
+/*Removes current-menu-item highlight from Testimonial*/
+ul.nav-ul li.current-menu-item a[href*="testimonials"] { background-color: #0F4C79; }
+
+.hero {
+  background-position: right;
+  padding: 100px 0;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.hero .container-small {
+  height: 300px;
+  border-radius: 5px;
+  padding-left: 50px;
+}
+
+.hero-title {
+  color: #0D446C;
+  text-shadow: 4px 4px 4px #aaa;
+  font-size: 2em;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.hero-text {
+  padding-bottom: 50px;
+  color: #868610;
+}
+
+.hero-p{
+  color: #0D446C;
+  font-size: 1.1em;
+}
+
+.fa-bars, .fa-times {
+  display: none;
+  padding-right: 15px;
+}
+
+/*SERVICES-SECTION*/
+.services-section {
+  color: #fff;
+  background-color: #297CB9;
+  /*fixes issue with background-color not covering the whole section*/
+  overflow: hidden;
+}
+
+.services-wrapper > ul {
+  width: 90%;
+  max-width: 1140px;
+  list-style: none;
+  margin: 4em auto 2em auto;
+}
+
+.services-wrapper > ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.services-item {
+  width: 17%;
+  margin: 0 1.5% 3em;
+}
+
+.service {
+  height: 360px;
+  background-color: #297CB9;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.icon {
+  padding-bottom: 20px;
+  font-size: 3em;
+}
+
+.service-h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.service-h3:after {
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.service .btn {
+  position: absolute;
+  margin:auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service .btn button {
+  border-radius: 1px;
+  height: 30px;
+  width: 60px;
+  border: none;
+  background-color: #fff;
+  color: #297CB9;
+  font-size: 0.9em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn button:hover {
+  color: #fff;
+  background: #0D446C;
+}
+
+/*TESTIMONIALS*/
+.testimonials { background-color: #fff; }
+
+.testimonials h1 { color: #0D446C; }
+
+/*CONTACT-SECTION*/
+.contact-section {
+  color: #fff;
+  background-color: #297CB9;
+  overflow: hidden;
+}
+
+.form {
+  width: 35%;
+  margin-left: 10%;
+  max-width: 500px;
+  float: left;
+  margin-bottom: 40px;
+}
+
+input, textarea { float: right; }
+
+textarea { height: 100px; }
+
+label { width: 30%; }
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 70%;
+  padding: 7px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+textarea::-webkit-input-placeholder { font-size: 1.2em; }   
+
+input[type=submit] {
+  background-color: #C5423F;
+  border-radius: 1px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border: none;
+  font-size: inherit;
+}
+
+form button {
+  background-color: #C5423F;
+  border-radius: 1px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border: none;
+  font-size: inherit;
+}
+
+.form-field-set {
+  height: 43px;
+  margin-bottom: 20px;
+}
+
+.form-field-set:nth-of-type(4) { margin-bottom: 34px; }
+
+.form-field-set br { display: none; } 
+
+#form-textarea { height: 100px; }
+
+.recaptcha-wrapper {
+    margin-top: 35px;
+    float: right; 
+}
+
+#button-div {
+  width: 50%;
+  float: right;
+}
+
+.form-contact-info {
+  float: right;
+  width: 35%;
+  margin-right: 10%;
+  max-width: 500px;
+}
+
+.form-contact-info a {
+  color: #fff;
+  font-style: normal;
+}
+
+.form-contact-info a:hover { color: #0D446C; }
+
+tr td:last-child { padding-left: 20px; }
+
+/*SERVICE PAGE*/
+.services-section-page {
+  overflow: hidden;
+  background-color: #f1f1f1
+}
+
+.sidebar {
+  overflow: hidden;
+  float: left;
+  width: 27%;
+}
+
+.sidebar-title {
+  background-color: #0F4C79;
+  border-radius: 1px;
+  border-bottom: 4px solid #868610;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.sidebar-title h1 {
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+.sidebar-title h2 {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.services-sidebar {
+  border: 5px #0F4C79 solid;
+  border-top: none;
+  background-color: #fff;
+  border-radius: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.post-title {
+  background-color: #0F4C79;
+  padding: 15px 32px;
+  border-radius: 1px;
+  border-bottom: 4px solid #868610;
+  width: 65%;
+  float: right;
+}
+
+.post-title h1 {
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+}
+
+.service-content {
+  float: right;
+  width: 65%;
+  color: #0D446C;
+  font-weight: 400;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.service-content a { 
+  padding-bottom: 1px;
+  border-bottom: 1px solid #297CB9; 
+}
+
+.service-content img { 
+  width: 100%; 
+  height: auto;
+}
+
+.services-sidebar ul {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 0;
+}
+
+.services-sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px #297CB9 solid;
+}
+
+.services-sidebar ul li:last-child { border-bottom: none; }
+
+.services-sidebar ul li.current-menu-item a { 
+  color: #868610; 
+  font-weight: 700;
+}
+
+.services-sidebar ul li a {
+  font-weight: 400;
+  color: #0D446C;
+  border-bottom: none;
+  font-style: normal;
+}
+
+.services-sidebar ul li a:hover { color: #297CB9; }
+
+.no-menu {
+  margin-left: 15%;
+  float: none;
+  width: 70%;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #0D446C;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  font-style: normal;
+}
+
+/*CONTACT FORM 7*/
+span.wpcf7-not-valid-tip {
+  display: inline-block !important;
+  float: right;
+  color: #C5423F !important;
+  font-size: .9em !important;
+  background: #fff;
+  margin: 2px 0;
+  border: 2px solid #C5423F;
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+div.wpcf7-response-output {
+  color: #C5423F;
+  font-size: .9em !important;
+  border: 2px solid #C5423F;
+  border-radius: 5px;
+  background: #fff;
+  margin: 1em 0 !important;
+  width: 70%;
+  float: right;
+}
+
+div.wpcf7-validation-errors, 
+div.wpcf7-spam-blocked { border: 2px solid #C5423F !important; }
+
+form div.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+    color: #398f14;
+}
+
+/*404 PAGE*/
+.error-404-message {
+  color: #0D446C;
+  padding: 60px 0;
+}
+
+.error-404-message h1 { margin-bottom: 20px; }
+
+.error-404-message p { font-weight: 400; }
+
+.error-404-section section { padding: 80px 0; }
+
+.error-404-section { background-color: #f1f1f1; }
+
+.error-404-section section:last-child { 
+  background: #0F4C79; 
+  padding: 80px;
+}

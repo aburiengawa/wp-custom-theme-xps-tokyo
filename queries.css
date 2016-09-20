@@ -1,0 +1,259 @@
+@media only screen and (max-width: 1170px) {
+	.logo { margin-left: 10px; }
+	.contact-header {	margin-right: 20px; }
+}
+
+@media only screen and (max-width: 1169px) {
+	.cd-testimonials-wrapper { height: 350px; }
+	.service { height: 380px; }
+	.service-h3 { font-size: 105% }
+}
+
+@media only screen and (max-width: 1080px) {
+	.service-h3 { font-size: 100%; }
+}
+
+@media only screen and (max-width: 1024px) {
+  	.contact-header { font-size: .9em; }
+   	.service p {
+	  	font-size: .9em;
+	  	line-height: 140%;
+ 	}
+  	.service-h3 { font-size: 95%; }
+}
+
+@media only screen and (max-width: 999px) {
+	.container-small {
+		max-width: 1000px;
+	  	margin: 0 auto;
+	  	padding-left: 20px; 
+	  	padding-right: 20px;
+	}
+	.sidebar { width: 31%; }
+}
+
+@media only screen and (max-width: 980px) {
+	.services-item {
+	  	width: 30%;
+	  	margin: 0 1.6666% 3em;
+	}
+	.service { height: 280px; }
+	.service-h3 { font-size: 105%; }
+}
+
+@media only screen and (max-width: 959px) {
+	.services-sidebar { font-size: 90%; }
+}
+
+@media only screen and (max-width: 917px) {
+	.header-contact-details { display: block; }
+}
+
+@media only screen and (max-width: 886px) {
+	.service { height: 320px; }
+}
+
+@media only screen and (max-width: 839px) {
+	.no-menu { 
+		width: 90%;
+		margin-left: 5%;
+	}
+	.services-sidebar { font-size: 85%; }
+}
+
+@media only screen and (max-width: 832px) {
+	.services-sidebar { font-size: 80%; }
+}
+
+@media only screen and (max-width: 777px) {
+	.services-sidebar { font-size: 78%; }
+}
+
+/*iPad minus 1px*/
+@media only screen and (max-width: 767px) {
+	.cd-testimonials-wrapper { height: 230px; }
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 50%;
+		margin-left: 25%;
+	}
+	.form {
+		  height: 100%;
+		  width: 50%;
+		  margin-left: 25%;
+	}
+	.services-section-page { padding-top: 40px; }
+	.sidebar, .service-content, .post-title {
+		float: none;
+		width: 100%;
+	}	
+	.sidebar { width: 250px; }
+	.post-title { margin-top: 40px; }
+	.services-sidebar ul li { font-size: 110%; }
+	.no-menu {
+		width: 90%;
+		margin-left: 5%;
+	}
+  .services-sidebar { font-size: 80%; }
+}
+
+@media only screen and (max-width: 700px) {
+	.service { height: 360px; }
+}
+
+@media only screen and (max-width: 672px) {
+	#logo-tagline { font-size: 98%; }
+	.hero { background-position: 50% 50%; }
+}
+
+@media only screen and (max-width: 663px) {
+	header { height: 150px; }
+	#logo-tagline {
+		padding: 0;
+		position: absolute;
+		top: 117px;
+		left: 10px;
+	}
+	.nav-ul { font-size: 90%; }
+	ul.nav-ul li a {
+    	padding: 11px 10px 14px 10px;
+    	border-bottom: none;
+	}
+	.no-menu {
+		width: 100%;
+		margin-left: 0;
+	}
+	.service-content {
+		font-size: 90%;
+		padding: 20px;
+	}
+	.post-title { padding-left: 20px; }
+}
+
+@media only screen and (max-width: 620px) {
+	.cd-testimonials-wrapper { height: 250px; }
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 70%;
+		margin-left: 15%;
+	}
+	.form {
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+@media only screen and (max-width: 605px) {
+	.services-item {
+	  	width: 45%;
+	  	margin: 0 2.5% 3em;
+	}
+	.service { height: 340px; }
+	.post-title { margin-top: 0; }
+	.sidebar + .post-title {margin-top: 40px;}
+}
+
+/*Nexus 7 minus 1px*/
+@media only screen and (max-width: 599px) {
+	.nav-ul { 
+		text-align: left; 
+		display: none;
+	}
+	.main-nav ul li { display: block; }
+	.main-nav ul { float: left; }
+	.fa-bars, .fa-times {
+		float: right;
+		display: inline;
+		font-size: 1.5em;
+	}
+/*Removes current-menu-item highlight from Testimonial in mobile mode*/
+	ul.nav-ul li a { padding: 0 3px; }
+	ul.nav-ul li.current-menu-item { 
+		background-color: #868610; 
+		border-radius: 3px;
+	}
+	ul.nav-ul li.current-menu-item a[href*="testimonials"] { padding: 4px 3px 4px; }
+}
+
+@media only screen and (max-width: 536px) {
+	.contact-header { width: 35%; }
+}
+
+@media only screen and (max-width: 520px) {
+	.cd-testimonials-wrapper { height: 270px; }
+}
+
+@media only screen and (max-width: 514px) {
+	.contact-header {
+		font-size: .8em;
+		width: 40%;
+	}
+ }
+
+@media only screen and (max-width: 460px) {
+	.service { height: 340px; }
+}
+
+@media only screen and (max-width: 450px) {
+	.cd-testimonials-wrapper { height: 300px; }
+}
+
+@media only screen and (max-width: 418px) {
+	.cd-testimonials-wrapper { height: 320px; }
+	.form-contact-info {
+		float: none;
+		margin-top: 20px;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.form {
+		  width: 80%;
+		  margin-left: 10%;
+	}
+	.title { font-size: 120%; }
+}
+
+/*iPhone 6 Plus*/
+@media only screen and (max-width: 414px) {
+	.services-item {
+		width: 90%;
+		margin: 0 5% 3em;
+	}
+	.service { height: 280px; }
+	.sidebar { width: 100%; }
+	.hero { background-position: 60% 50%; }
+}
+
+/*iPhone 6*/
+@media only screen and (max-width: 375px) {
+	.hero-title { font-size: 25px; }
+	.hero-text { font-size: 14px; }
+	.hero-p { font-size: .9em; }
+	.sidebar {
+		width: 100%;
+		margin-left: 0;
+	}
+	.hero { 
+		background-position: 60% 50%; 
+		padding-top: 75px;
+	}
+}
+
+/*Xperia and Galaxy*/
+@media only screen and (max-width: 360px) {
+	.contact-header { width: 50%; }
+	.hero { padding-top: 50px; }
+}
+
+/*iPhone 5*/
+@media only screen and (max-width: 320px) {
+	header { height: 150px; }
+	#logo-tagline {
+		top: 117px;
+		left: 20px;
+	}
+	.hero { padding-top: 30px; }
+	.cd-testimonials-wrapper { height: 380px; }
+}
